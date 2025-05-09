@@ -14,7 +14,7 @@
 3. Run `uv pip install -r requirements.txt` 
 4. Run `uv pip install "mcp[cli]" fastmcp`
 
-## Getting Started - For Claude Desktop
+## Getting Started - For Claude Desktop - Free
 
 ### Claude Setup
 1. Install Claude Desktop
@@ -51,7 +51,7 @@ If everything is correct, you should be able to see the ScoutTeamMCP tool here i
 Enter the following prompt in Claude Desktop:
 > Give me a list of athletes from the Eastern Kentucky basketball team.
 
-## Getting Started - For API
+## Getting Started - For API - Paid based on no. of API calls, req res tokens, model
 
 1. Create an API key from the [Anthropic Console](https://console.anthropic.com/settings/keys)
 2. Add minimum credit to your Anthropic account
