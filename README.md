@@ -24,14 +24,16 @@
    
    ```json
    "ScoutTeam": {
-     "command": "/Users/username/.local/bin/uv",
-     "args": [
-       "--directory",
-       "/PATH_TO_PROJECT_DIR/ScoutTeamMCP/",
-       "run",
-       "ScoutTeam.py"
-     ]
-   }
+      "command": "/Users/username/.local/bin/uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "/PATH_TO_PROJECT_DIR/ScoutTeamMCP/",
+      ]
+    }
    ```
    
    Notes:
@@ -41,9 +43,10 @@
 
 6. Restart Claude after making these changes
 
-If everything is complete you should be able to see the ScoutTeamMCP tool here in the Claude Desktop:
+If everything is correct, you should be able to see the ScoutTeamMCP tool here in Claude Desktop.
 
 <img width="515" alt="Screenshot 2025-05-09 at 12 25 54 PM" src="https://github.com/user-attachments/assets/c990149f-d1a8-4ea9-8f6b-b00b0b5dba85" />
 
-
-
+## Running
+Enter prompt in Claude Desktop
+> Give me a list of athletes from the Eastern Kentucky basketball team.
