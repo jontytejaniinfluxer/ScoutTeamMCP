@@ -179,7 +179,6 @@ async def process_with_claude(html_data, university=None, sport=None):
                 "raw_response": claude_response
             }
     except Exception as e:
-        logger.error(f"Error processing with Claude: {str(e)}", exc_info=True)
         return {
             "success": False, 
             "error": f"Error calling Calude API: {str(e)}"
@@ -193,8 +192,6 @@ async def process_univeristy(request: UniversityRequest):
     """
     try:
         roster_urls = await list_resources(university=request.university, sport=request.sport)
-        logger.debug(f"Roster URLs: {roster_urls}")
-
 
         if not roster_urls:
             return {
