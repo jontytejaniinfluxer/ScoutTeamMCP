@@ -63,3 +63,12 @@ Enter the following prompt in Claude Desktop:
      -H "Content-Type: application/json" \
      -d '{"university": ["Eastern Kentucky"], "sport": ["basketball"]}'
    ```
+
+## Conclusion
+
+The ScoutTeamMCP project provides two methods to access structured athlete roster data from university sports websites: Claude Desktop integration (via MCP) and the FastAPI-based API. Each method offers distinct advantages based on your needs:
+
+- **Claude Desktop (MCP)**: Ideal for users who value an interactive, prompt-based interface. It’s free to use (assuming Claude Desktop access) and supports quick, ad-hoc queries without additional API costs. However, it requires manual prompt entry and familiarity with Claude’s interface, making it best for individual or exploratory use.
+- **FastAPI Server (API)**: Designed for automation and scalability, the API enables programmatic access to roster data. It’s perfect for integration into larger applications or processing multiple requests. However, it incurs costs based on Anthropic API usage (e.g., number of calls, tokens processed, and model selected) and may be slower than Claude Desktop due to HTTP request overhead and external API calls.
+
+Choose **Claude Desktop** for simple, cost-free exploration or the **API** for automated, large-scale data processing. Both methods harness Anthropic’s Claude model to deliver accurate, structured athlete data from university sports rosters.
